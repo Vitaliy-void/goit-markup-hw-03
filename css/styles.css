@@ -18,7 +18,12 @@ body {
   color: #434455;
   background-color: #fff;
 }
-
+h1,h2,h3,h4,h5,h6,p {
+    
+    margin: 0;
+    /* Скидає відступи у абзаців */
+    
+}
 a {
     text-decoration: none;
     /* Видаляє підкреслення у посилань */
@@ -28,17 +33,54 @@ ul,
 ol {
     list-style: none;
     /* Видаляє маркери у списках */
+    padding: 0;
+    /* Скидає відступи у списках */
+    margin: 0;
+    /* Скидає відступи у списках */
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    /* Зображення не виходять за межі блоку */
+    height: auto;
+    /* Висота зображення автоматична */
+}
+
+.container {
+    max-width: 1440px;
+    /* Максимальна ширина контейнера */
+    padding-left: 156px;
+    padding-right:156px; 
+    margin-left: 0;
+    margin-right:0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display:flex;
+    flex-direction: row;
+    margin-right: 332px;
+   
 }
 .logo {
+    display: flex;
+    align-items: center;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    margin-left: 0;
+    margin-right: 76px;
+    margin-top: 25.5px;
+    margin-bottom: 25.5px;
     font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-    
-        /* line-height: 21px; */
-        line-height: 117%;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
+    font-weight: 700;
+    font-size: 18px;
+            /* line-height: 21px; */
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
 }
  
 span {
@@ -53,6 +95,38 @@ span {
         color: #2e2f42;
 }
 
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.links {
+    display: flex;
+    justify-content: flex-start; 
+    /*justify-content: space-between; */
+        align-items: center;
+        gap: 40px
+
+}
+.links:not(:last-child) {
+    margin-right: 40px;
+    /* Відстань між пунктами меню */
+    padding-right: 40px;
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 40px;
+
+}
 .menu-item {
     font-family: "Roboto", sans-serif;
         font-weight: 500;
