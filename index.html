@@ -10,7 +10,7 @@
             <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
             <title>WebStudio</title>
         </head>
-        <header>
+        <header class="header">
         <!-- #region Header -->
            <div class="container">
                 <nav class="header-nav">
@@ -39,26 +39,26 @@
             </section>
         <!-- #endregion Button -->
         <!-- #region  Advantages-->
-            <section>
+            <section class="advantages-head">
                 <div class=container>
-                    <h2 hidden>Advantages</h2>
+                    <h2 class=hidden>Advantages</h2>
                     <ul class="advantages">
-                        <li>
+                        <li class="adventegs-list-item">
                             <h3 class="advantages-title">Strategy</h3>
                             <p class="advantages-text">Our goal is to identify the business
                                 problem to walk away with the perfect and creative solution.</p>
                         </li>
-                        <li>
+                        <li class="adventegs-list-item">
                             <h3 class="advantages-title">Punctuality</h3>
                             <p class="advantages-text">Bring the key message to the brand's audience for the best price within the shortest
                                 possible time.</p>
                         </li>
-                        <li>
+                        <li class="adventegs-list-item">
                             <h3 class="advantages-title">Diligence</h3>
                             <p class="advantages-text">Research and confirm brands with the strongest digital growth opportunities and
                                 minimize risk.</p>
                         </li>
-                        <li>
+                        <li class="adventegs-list-item">
                             <h3 class="advantages-title">Technologies</h3>
                             <p class="advantages-text">Design practice focused on digital experiences. We bring forth a deep passion for
                                 problem-solving.</p>
@@ -69,28 +69,36 @@
         <!-- #endregion  Advantages-->
         <!-- #region  Our Team-->
             <Section class="our-team">
+                <div class="container column-container">
                     <h2 class="our-team-main">Our Team</h2>
-                <div class="container">
                     <ul class="our-team-list">
                         <li class="our-team-item">
                             <img class="our-team-foto" src="./images/foto-product-designer.jpg" alt="Foto product designer" width="264" height="260">
-                            <h3 class="our-team-title">Mark Guerrero</h3>
-                            <p class="our-team-text">Product Designer</p>
+                            <div class="our-team-name">
+                                <h3 class="our-team-title">Mark Guerrero</h3>
+                                <p class="our-team-text">Product Designer</p>
+                            </div>
                         </li>
                         <li class="our-team-item">
                             <img class="our-team-foto" src="./images/foto-frontend-developer.jpg" alt="Foto frontend developer" width="264" height="260">
-                            <h3 class="our-team-title">Tom Ford</h3>
-                            <p class="our-team-text">Frontend Developer</p>
+                            <div class="our-team-name">
+                                <h3 class="our-team-title">Tom Ford</h3>
+                                <p class="our-team-text">Frontend Developer</p>
+                            </div>
                         </li>
                         <li class="our-team-item">
                             <img class="our-team-foto" src="./images/foto-marketing.jpg" alt="Foto marketing" width="264" height="260">
-                            <h3 class="our-team-title">Camila Garcia</h3>
-                            <p class="our-team-text">Marketing</p>
+                            <div class="our-team-name">
+                                <h3 class="our-team-title">Camila Garcia</h3>
+                                <p class="our-team-text">Marketing</p>
+                            </div>
                         </li>
                         <li class="our-team-item">
                             <img class="our-team-foto" src="./images/foto-ui-designer.jpg" alt="Foto ui designer" width="264" height="260">
-                            <h3 class="our-team-title">Daniel Wilson</h3>
-                            <p class="our-team-text">UI Designer</p>
+                            <div class="our-team-name">
+                                <h3 class="our-team-title">Camila Garcia</h3>
+                                <p class="our-team-text">Marketing</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -99,39 +107,50 @@
         <!-- #endregion  Our Team-->
         <!-- #region  Portfolio-->
         <section class="portfolio">
-            
-            <h2 id="portfolio" class="portfolio-title">Our Portfolio</h2>
-            <div class="container">
+            <div class="container column-container">
+                <h2 id="portfolio" class="portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
-                    <li>
+                    <li class="portfolio-list-item">
                         <img class="portfolio-foto" src="./images/banking-app.jpg" alt="Banking application" width="360" height="300">
-                        <h3 class="portfolio-title-list">Banking App</h3>
-                        <p class="portfolio-text">App</p>
+                        <div class="portfolio-app">
+                            <h3 class="portfolio-title-list">Banking App</h3>
+                            <p class="portfolio-text">App</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="portfolio-list-item">
                         <img class="portfolio-foto" src="./images/cashless-payment.jpg" alt="Cashless payment" width="360" height="300">
-                        <h3 class="portfolio-title-list">Cashless Payment</h3>
-                        <p class="portfolio-text">Marketing</p>
+                        <div class="portfolio-app">
+                            <h3 class="portfolio-title-list">Cashless Payment</h3>
+                            <p class="portfolio-text">Marketing</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="portfolio-list-item">
                         <img class="portfolio-foto" src="./images/meditation-app.jpg" alt="Meditation application" width="360" height="300">
-                        <h3 class="portfolio-title-list">Meditation App</h3>
-                        <p class="portfolio-text">App</p>
+                        <div class="portfolio-app">
+                            <h3 class="portfolio-title-list">Meditation App</h3>
+                            <p class="portfolio-text">App</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="portfolio-list-item">
                         <img class="portfolio-foto" src="./images/taxi.jpg" alt="Taxi Service" width="360" height="300">
-                        <h3 class="portfolio-title-list">Taxi Service</h3>
-                        <p class="portfolio-text">Marketing</p>
+                        <div class="portfolio-app">
+                            <h3 class="portfolio-title-list">Taxi Service</h3>
+                            <p class="portfolio-text">Marketing</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="portfolio-list-item">
                         <img class="portfolio-foto" src="./images/screen.jpg" alt="Screen Illustrations" width="360" height="300">
-                        <h3 class="portfolio-title-list">Screen Illustrations</h3>
-                        <p class="portfolio-text">Design</p>
+                        <div class="portfolio-app">
+                            <h3 class="portfolio-title-list">Screen Illustrations</h3>
+                            <p class="portfolio-text">Design</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="portfolio-list-item">
                         <img class="portfolio-foto" src="./images/online.jpg" alt="Online Courses" width="360" height="300">
-                        <h3 class="portfolio-title-list">Online Courses</h3>
-                        <p class="portfolio-text">Marketing</p>
+                        <div class="portfolio-app">
+                            <h3 class="portfolio-title-list">Online Courses</h3>
+                            <p class="portfolio-text">Marketing</p>
+                        </div>
                     </li>
                 </ul>
             </div>

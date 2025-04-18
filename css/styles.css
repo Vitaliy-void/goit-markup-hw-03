@@ -35,17 +35,18 @@ ol {
 }
 
 img {
-    display: flex;
+    display: block;
     max-width: 100%;
     height: auto;
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 .container {
-    max-width: 1440px;
-    padding-left: 156px;
-    padding-right:156px; 
-    margin-left: 0;
-    margin-right:0;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -54,8 +55,14 @@ img {
     display:flex;
     flex-direction: row;
     margin-right: 332px;
+    align-items: center;
    
 }
+
+.menu-item {
+    padding: 24px 0;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -154,12 +161,11 @@ address {
     color: #404bbf;
     text-decoration: underline;
 }
-.section-solution {
-    background: #2e2f42;
-    
-}
 
 .section-solution {
+    padding: 188px 0;
+    margin: 0 auto;
+    background: #2e2f42;
     display: flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
@@ -169,7 +175,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 1440px;
+    max-width: 1158px;
 }
 
 .solution-container {
@@ -182,8 +188,8 @@ address {
 
 .solution {
     display: flex;
-    margin-top: 188px;
-    width: 496px;
+    /* margin-top: 188px; */
+    max-width: 496px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 56px;
@@ -197,19 +203,20 @@ address {
 
 .service {
     
+    border: none;
     background: #4d5ae5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    width: 169px;
     height: 56px;
+    min-width: 169px;
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #fff; 
     cursor: pointer;
-    margin-bottom: 188px;
+    /* margin-bottom: 188px; */
     }
 
 .service:hover {
@@ -220,6 +227,9 @@ address {
     background-color: #404BBF;
 }
 
+.advantages-head {
+    padding: 120px 0;
+}
 .advantages-title {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -228,11 +238,24 @@ address {
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
+
+.hidden {
+    visibility: hidden;
+}
 .advantages {
     display:flex;
-    margin: 120px 0;
+    /* margin: 120px 0; */
     gap:24px;
 }
+
+.adventegs-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.advantegs-title {
+    margin-bottom: 8px;
+}
+
 .advantages-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -241,10 +264,18 @@ address {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 .our-team {
     background: #F4F4FD;
-    padding-bottom: 120px;
-    max-width: 1440px;
+    max-width: 1158px;
+    padding: 120px 0;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-team-list {
@@ -258,9 +289,10 @@ address {
     font-size: 36px;
     display: flex;
     justify-content: center;
-    max-width: 1440px;
-    padding-top: 120px;
-    margin-bottom: 72px;
+    max-width: 1158px;
+    gap: 24px;
+    /* padding-top: 120px;
+    margin-bottom: 72px; */
     line-height: 111%;
     letter-spacing: 0.02em;
     text-align: center;
@@ -268,19 +300,25 @@ address {
     text-transform: capitalize
 }
 .our-team-item {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .our-team-foto {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
+}
+
+.our-team-item {
+    padding: 32px 0;
 }
 .our-team-title {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-align: center;
@@ -299,7 +337,8 @@ address {
 }
 
 .portfolio {
-    margin-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
 }
 
 .portfolio-title {
@@ -308,9 +347,9 @@ address {
     font-size: 36px;
     display: flex;
     justify-content: center;
-    max-width: 1440px;
-    padding-top: 120px;
-    margin-bottom: 72px;
+    max-width: 1158px;
+    /* padding-top: 120px;
+    margin-bottom: 72px; */
     line-height: 111%;
     letter-spacing: 0.02em;
     text-align: center;
@@ -321,9 +360,12 @@ address {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap:24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
-
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+}
 .portfolio-foto {
     display: flex;
     justify-content: center;
@@ -334,13 +376,18 @@ address {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     padding-left: 16px;
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
 
+.portfolio-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .portfolio-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -353,7 +400,7 @@ address {
 }
 .footer {
     background: #2e2f42;
-    max-width: 1440px;
+    max-width: 1158px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -375,7 +422,9 @@ font-family: "Roboto", sans-serif;
 }
 
 .logo-f a {
+    display: inline-block;
     align-items: center;
+    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
