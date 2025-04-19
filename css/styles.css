@@ -43,12 +43,20 @@ img {
 .header {
     border-bottom: 1px solid #e7e9fc;
 }
-.container {
+
+.container-header {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
+}
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
     align-items: center;
 }
 .header-nav {
@@ -403,13 +411,11 @@ address {
 }
 .footer {
     background: #2e2f42;
-    /* max-width: 1158px; */
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .footer-container {
-    /* display: flex; */
     align-items: flex-start;
     flex-direction: column;
     gap: 16px;
@@ -437,7 +443,6 @@ address {
     color: #4d5ae5;
 }
 .footer-logo {
-    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
