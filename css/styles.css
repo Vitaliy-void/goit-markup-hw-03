@@ -353,7 +353,6 @@ address {
     display: flex;
     justify-content: center;
     max-width: 1158px;
-    /* padding-top: 120px;*/
     margin-bottom: 72px;
     line-height: 111%;
     letter-spacing: 0.02em;
@@ -410,22 +409,22 @@ address {
 }
 
 .footer-container {
-    display: flex;
+    /* display: flex; */
     align-items: flex-start;
     flex-direction: column;
     gap: 16px;
 }
 .footer-text {
-font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    width: 264px;
+    max-width: 264px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
 
-.logo-f {
+.logo-foot {
     display: inline-block;
     align-items: center;
     margin-bottom: 16px;
@@ -438,6 +437,7 @@ font-family: "Roboto", sans-serif;
     color: #4d5ae5;
 }
 .footer-logo {
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
