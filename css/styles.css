@@ -46,6 +46,11 @@ img {
 
 .container-header {
     display:flex;
+    width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        align-items: center;
 }
 .container {
     width: 1158px;
@@ -178,20 +183,11 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 1158px;
-}
-
-.solution-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
 }
 
 .solution {
     display: flex;
-    /* margin-top: 188px; */
+    margin:0 auto;
     max-width: 496px;
     font-family: var(--font-family);
     font-weight: 700;
